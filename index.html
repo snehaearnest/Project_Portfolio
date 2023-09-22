@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7659e5f3cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Certificates</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Java Developer</p>
+            <h1>Hi,I am <span>Sneha</span> from <br>Trivandrum,Kerala</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="S5.jpg" width="400" height="400">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>My name is Sneha Earnest.I was born in Kollam,Kerala on May 17 2001.I am a graduate in Bsc Computer Science from Mar Ivanios college Trivandrum.I completed my 12th and 10th from Christ Nagar Higher Secondary School. My hobbies are  listening to music, reading and singing, to learn new things that intersets me.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('project')">Projects</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>HTML,CSS,JavaScript,Java,C,C++,Python</li>
+                        <li><span>Software Development Tools</span><br>Git,Eclipse,Vs</li>
+                        <li><span>Database Managment System</span><br>MySql</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>S-Life</span><br>It is an accident alert system which deals with alerting emergency response teams with notification of current location on time. Other than that we are converting ordinary cars to smart ones by adding extra features like theft prevention alerting system and a heat and humidity detector without any modern features in very less extortionate.</li>
+                        <li><span>Library Managment System</span><br>Simple java project where we can add update show books</li>
+                        <li><span>Portfolio</span><br>Simple Webpage using css html and javascript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>BSc Computer Science</span><br>Mar Ivanios College <br>2019 - 2022 <br>Trivandrum, India</li>
+                        <li><span>12th</span><br>Christ Nagar Hr Sec School, ISC <br>2018 - 2019 <br> Trivandrum, India</li>
+                        <li><span>10th</span><br>Christ Nagara Hr Sec School, ICSE <br>2016 - 2017 <br> Trivandrum, India</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>Python Project</h2>
+                <a href="https://github.com/snehaearnest/s-life">S-Life Code</a>
+            </div>
+            <div>
+                <h2>Java Project</h2>
+                <a href="https://github.com/snehaearnest/java">Library Code</a>
+            </div>
+            <div>
+                <h2>HTML Project</h2>
+                <a href="https://github.com/snehaearnest/html">Profile Code</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="JavaCer.png">
+            </div>
+            <div class="work">
+                <img src="HTMLCer.png">
+            </div>
+            <div class="work">
+                <img src="CSS_Cer.png">
+            </div>
+            <div class="work">
+                <img src="JavaScript_Cer.png">
+            </div>
+            <div class="work">
+                <img src="SQL_Cer.png">
+            </div>
+            <div class="work">
+                <img src="Git_Cer.png">
+            </div>
+        </div>
+        
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> snehaearnest1719@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 6282020762</p>
+                <div class="social-icon">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="SnehaEarnest_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
